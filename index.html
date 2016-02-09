@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="Canvas.js"></script>
+<script src="Direction.js"></script>
+<script src="Zone.js"></script>
+<script src="App.js"></script>
+
+<canvas id="c"></canvas><br/>
+<input id="zone" name="type" type="radio" checked/>Зона<br/>
+<input id="direction" name="type" type="radio"/>Направление<br/><br/>
+Координаты<br/>
+x1: <input type="text" id="x"/><br/>
+y1: <input type="text" id="y"/><br/>
+x2: <input type="text" id="xx"/><br/>
+y2: <input type="text" id="yy"/><br/>
+<button id="add"/>Добавить</button><button id="change"/>Изменить</button>
+<button id="remove">Удалить</button><br/>
+<br/>
+
+<form id="image_form" action="upload.php" method="post" enctype="multipart/form-data">
+<input type="file" name="file"/>
+</form>
+<button id="upload">Upload Image</button>
+<button id="load">Load</button>
+<button id="save">Save</button>
+</body>
+</html>
